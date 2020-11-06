@@ -15,12 +15,12 @@ namespace CountingCharacters2
         public static void CountChar(char[] charactersInString)
         {
             Dictionary<char, int> charCount = new Dictionary<char, int>();
-            int count = 0;
+            
             foreach (char item in charactersInString)
             {
                 if (charCount.ContainsKey(item))
                 {
-                    count = charCount[item];
+                    int count = charCount[item];
                     charCount[item] = count + 1;
                 }
                 else
